@@ -8,13 +8,19 @@ describe('step-generator', () => {
   })
   
   it('starts at start', () => {
-    const gen = stepGenerator(5)
+    const gen = stepGenerator({ start:5 })
     expect(gen.next().value).toBe(5)
     expect(gen.next().value).toBe(6)
   })
 
   it('increments by step', () => {
-    const gen = stepGenerator(0, 10)
+    const gen = stepGenerator({ step: 3 })
+    expect(gen.next().value).toBe(1)
+    expect(gen.next().value).toBe(4)
+  })
+
+  it('starts at start, increments by step', () => {
+    const gen = stepGenerator({ start: 0, step: 10 })
     expect(gen.next().value).toBe(0)
     expect(gen.next().value).toBe(10)
   })
