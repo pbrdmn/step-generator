@@ -1,6 +1,6 @@
 {
   "name": "step-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate a sequence of numbers",
   "main": "index.js",
   "repository": "git@github.com:dustykeyboard/step-generator.git",
