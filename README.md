@@ -5,11 +5,15 @@ Generate a sequence of numbers
 
 ## Installation
 
-`npm install --save step-generator` or `yarn add step-generator`
+```
+$> npm install --save step-generator
+```
 
 ## Test
 
-`npm test` or `yarn test`
+```
+$> npm test
+```
 
 ## Usage
 
@@ -18,7 +22,7 @@ Generate a sequence of stepping numbers.
 ```
 const stepGenerator = require('step-generator')
 
-const evenGenerator = stepGenerator(2, 2)
+const evenGenerator = stepGenerator({ start: 2, step: 2 })
 
 const evens = [
     evenGenerator.next().value,
