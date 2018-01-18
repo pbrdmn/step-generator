@@ -1,6 +1,8 @@
 # step-generator
 Generate a sequence of numbers
 
+[![Build Status](https://travis-ci.org/dustykeyboard/step-generator.svg?branch=master)](https://travis-ci.org/dustykeyboard/step-generator)
+
 ## Installation
 
 `npm install --save step-generator` or `yarn add step-generator`
